@@ -1,0 +1,240 @@
+﻿<!DOCTYPE html>
+<!-- 30 Minute website using SASS, Compass, Susy and Breakpoint.  Please see screen.scss SASS file for explanations and shortcuts that I took  -S.B., 02-07-16-->
+<!-- The HTML is mostly basic, all the detail is mainly in the screen.scss SASS file. -->
+<html>
+
+
+
+    <head>
+        <meta charset="utf-8">
+        <title>Toner Request</title>
+        
+        <link rel="stylesheet" href="stylesheets/screen.css">
+        <script src="js/jquery-1.12.1.min.js"></script>
+        <script src="js/main.js"></script>        
+    </head>
+    <body>
+    	
+        <main>
+
+<!-- HEADER -S.B., 02/22/16         -->
+
+            <header>
+
+                <table border="0" width="100%">
+                    <tr>
+
+                        <td>&nbsp;</td>
+                    </tr>
+                </table>
+            </header>
+
+            <aside class="left">
+                <ul>
+<!--                     <li><a href="#" class="buttons_1" />Enrollment</a></li>
+                    <li><a href="#" class="buttons_2" />Degree Programs</a></li>
+                    <li><a href="#" class="buttons_3" />Financial Aid</a></li>
+                    <li><a href="#" class="buttons_4" />Counseling</a></li>
+ -->
+                    <li><a href="#" class="buttons_small">Home</a></li>
+                    <li><a href="#" class="buttons_small">New Request</a></li>
+                    <li><a href="#" class="buttons_small">Documents</a></li>
+                    <li><a href="#" class="buttons_small">Toner Requests</a></li>
+                    <li><a href="#" class="buttons_small">Lists</a></li>
+                    <li><a href="#" class="buttons_small">Printer Details</a></li>
+                    <li><a href="#" class="buttons_small">Toner Details</a></li>
+                    <li><a href="#" class="buttons_small">Notification</a></li>                                                            
+                    <li><a href="#" class="buttons_small">Site Contents</a></li>                    
+                </ul>
+            </aside>
+
+
+            <article>
+                <form action="ajax/process.php" method="post" class="ajax">
+<!--                 <img id="main_image" src="images/image1.jpg" />  -->
+                <table width="100%"> <!-- BIG OL' TABLE -->
+                    <tr>
+                        <td class="toner_subHeader" span="100%" width="100%">Toner Request Form</td>
+                    </tr>
+                    <tr>  <!-- ROW THAT FORMS NEW TABLE -->
+                        <td> <!-- TD THAT FORMS NEW TABLE -->
+                            <table width="100%"> <!-- NEW TABLE -->
+                                    <tr> <!--  BUTTONS -->
+                                        <td>&nbsp;</td>                                
+                                    </tr>
+
+                                    <tr>
+                                        <td class="section_label">Details</td>
+                                    </tr>
+                                    <tr> <!--  BUTTONS -->
+                                        <td>&nbsp;</td>                                
+                                    </tr>
+<!--                 <form action="ajax/process.php" method="post" class="ajax"> FORM USED TO BE CALLED HERE-->
+                                    <tr>
+                                        <td width="15%" >
+                                            Request Date
+                                        </td> <!-- WILL AUTOPOPULATE VALUE= GETDATE SQL-S.B., 02-22-16 -->
+                                        <td>
+                                            <input type="textbox" class="textbox_disabled" disabled="true" name="RequestDate">
+        <!--                                 <td width="10%"><input type="checkbox">Change Requestor</td> -->
+        <!--                                 <input type="checkbox">Change Requestor -->
+                                        </td>
+                                    </tr>
+
+
+                                    <tr>
+                                        <td >
+                                            Locations
+                                        </td>
+
+                                        <td>
+                                             <select name="Location">
+                                                  <option value="test1">test1</option>
+                                                  <option value="test2">test2</option>
+                                            </select>                             
+                                        </td>
+                                    </tr>
+
+
+                                    <tr>
+                                        <td >
+                                            Phone
+                                        </td> <!-- WILL AUTO POPULATE -S.B., 02-22-16 -->
+                                        <td>
+                                            <input type="textbox" class="textbox_disabled" disabled="true" name="Phone">
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td >
+                                            Requestor
+                                        </td>
+
+                                        <td>
+                                             <select name="Requestor">
+                                                  <option value="test1">test1</option>
+                                                  <option value="test2">test2</option>
+                                            </select>                             
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td >
+                                            Email
+                                        </td>
+                                        <td>
+                                            <input type="textbox" class="textbox" name="Email">
+                                        </td>
+                                    </tr>
+
+
+                                    <tr>
+                                        <td>
+                                             &nbsp;
+                                         </td>
+                                    </tr>
+        <!-- TONER DETAILS               *******************************************************************************      -->
+                                    <tr>
+                                        <td class="section_label">
+                                                                    Printer Supplies
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td> 
+                                            &nbsp;
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                         <td  colspan = "5" width="100%">
+
+                                            <table width="100%" class="toner_table">
+
+                                                <tr>
+                                                    <td width="100%" class="row_label" colspan="5">
+                                                        <table>
+                                                            <tr>
+                                                                     <td class="serial_no"> S. No</td> 
+                                                                    <td class="dropdown"> Printer Model</td>
+                                                                    <td class="dropdown"> Toner</td>
+                                                                    <td class="ordering_code"> Ordering Code</td> 
+                                                                    <td class="quantity"> Quantity</td> 
+                    
+                                                            </tr>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                             </table>  <!-- END TONER TABLE -->
+                                   
+                                        </td>
+
+                                    </tr>
+                                    <tr> <!-- ROW WITH ACTUAL INPUT BOXES-->
+                                        
+                                                    <td align="center" class="serial_no"> 
+                                                        <input type="textbox" class="textbox_small_disabled" name="SNo">
+                                                    </td>
+                                                    <td class="dropdown"> 
+                                                             <select class="dropdown" name="PrinterModel">
+                                                              <option value="test1">test1</option>
+                                                              <option value="test2">test2</option>
+                                                            </select>                             
+                                                    </td>
+                                                    <td class="dropdown"> 
+                                                             <select class="dropdown" name="Toner">
+                                                                  <option value="test1">test1</option>
+                                                                  <option value="test2">test2</option>
+                                                            </select>                             
+                                                    </td>
+                                                    <td class="ordering_code" >
+                                                        <input type="textbox" class="textbox_small_disabled" name="OrderingCode">
+                                                    </td>
+                                                    <td class="quantity"> 
+                                                        <input type="textbox" class="quantity" name="Quantity">
+                                                    </td>
+                                                    <td class="add"><img src="images/icon-add.png" class="addRowButton"></td>
+                                    </tr> <!-- end dropdown table -->
+<!--                                             </table>  WEIRD UNKNOWN TABLE TAG-->
+
+
+<!--                                             </table>  MOVED WEIRD END TABLE TAG HERE (FROM COMMENT) -->
+
+                            </table> <!-- END NEW TABLE -->
+                        </td> <!-- END TD THAT FORMS NEW TABLE -->
+                    </tr> <!-- END ROW THAT FORMS NEW TABLE -->
+
+
+        <tr>
+            <td width="10%">
+                Total Quantity 
+                <input type="label" value = "0" name="TotalQuantity">
+            </td>
+
+        </tr>
+        <tr>
+            
+           <td> Comments<TEXTAREA cols="20" rows="2" name="Comments">&nbsp;</TEXTAREA></td>
+        </tr> <!-- COMMENT BOX -S.B., 02-23-16 -->
+        <!--                 </table>  END OF MAIN TABLE?-->  
+        <!-- END TONER DETAILS               *******************************************************************************      -->
+
+
+</table> <!-- END BIG OL' TABLE MAIN -->
+                    </article>
+
+</form>
+
+
+            <footer>
+                <table width="100%" cellpadding="0" cellspacing="0">
+                    <tr>
+                    </tr>
+                </table>
+
+
+
+            </footer>
+        </main>
+    </body>
+</html>

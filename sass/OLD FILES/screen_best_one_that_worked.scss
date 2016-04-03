@@ -1,0 +1,140 @@
+//Created by Shylah Barnes, shylah.barnes@gmail.com (951)312-0971, 02-07-16
+
+@import "compass/reset";
+@import "compass";
+@import "susy";  //USED SUSY FOR QUICKER WEBSITE LAYOUT DESIGN -S.B.
+//@import "susyone";
+@import "breakpoint";
+
+
+$susy: (
+  columns: 12,
+  gutters: 1/4,
+    gutter-position: split,
+  global-box-sizing: border-box,
+  debug: (image: hide)
+);
+
+
+body{
+
+
+@include container(980px); // CREATE LAYOUT CONTAINER
+    overflow:auto;
+    font-family:Arial;
+    font-size:14px;
+
+
+
+}
+
+//DECLARE 12 COLUMN GRID LAYOUT -S.B.
+main{
+    @include span(12);
+}
+
+@include breakpoint(500px){  //BREAKPOINT EXECUTES RESPONSIVE WEB DESIGN ELEMENTS WHEN WINDOW IS SIZED TO 500px -S.B.
+header{
+
+
+}
+
+
+
+aside {
+    &.left{
+        @include span(4 at 1); //ASIDE "LEFT" TAKES 4 OF 12 GRID COLUMNS -S.B.
+
+
+    }
+
+    &.right{ //ASIDE "LEFT" TAKES 2 OF 12 GRID COLUMNS -S.B.
+        @include span(2 at 11 of 12);
+
+    }
+
+  
+ }
+
+article {
+
+        @include span(6 at 5 of 12); //ARTICLE ELEMENT TAKES 6 OF 12 GRID COLUMNS -S.B.
+
+}
+
+footer{
+
+    @include span(12 at 1); //FOOTER COVERS ENTIRE BOTTOM SPAN AREA -S.B.
+
+}
+
+}//END BREAKPOINT
+a{
+    text-decoration: none;
+    display:block;
+    font-family:Arial;
+    font-size:14px;
+    color:blue;
+}
+
+
+
+li{
+    margin:10px;
+    display:block;
+    width:100%;
+}
+
+
+#main_image {
+    max-width: 100%;
+    height: auto;
+    position:relative;
+    top:75px;
+}
+
+//USED SASS "EXTEND" FOR EASIER AND QUICKER BUTTOM CUSTOMIZATION -S.B.
+.buttons{
+    background: blue;
+    color: white;
+    font-family:Arial;
+    font-size: 24px;
+    border:5px;
+    padding: 40px;
+    text-align:center;
+    font-weight: bold;
+    }
+.buttons_1{
+    @extend .buttons;
+    background:#2b6ca2;
+}
+.buttons_2{
+    @extend .buttons;
+    background:#045283;
+
+}
+.buttons_3{
+    @extend .buttons;
+    background:#217ea9;
+
+}
+.buttons_4{
+    @extend .buttons;
+    background:#103f53;
+
+}
+
+.buttons_small{
+        @extend .buttons;
+        padding: 10px;
+        background:#286da6;
+        font-size: 12px;
+
+}
+
+.buttons_campus_map{
+        @extend .buttons_small;
+        padding: 18px;
+        background:#a0a0a0;
+
+}

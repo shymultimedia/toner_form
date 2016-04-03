@@ -1,0 +1,289 @@
+/* line 5, ../../../../Users/rhtwebdev/Documents/Projects/compass.app.windows.1.29/compass.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../Users/rhtwebdev/Documents/Projects/compass.app.windows.1.29/compass.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../Users/rhtwebdev/Documents/Projects/compass.app.windows.1.29/compass.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../Users/rhtwebdev/Documents/Projects/compass.app.windows.1.29/compass.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../Users/rhtwebdev/Documents/Projects/compass.app.windows.1.29/compass.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../Users/rhtwebdev/Documents/Projects/compass.app.windows.1.29/compass.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../Users/rhtwebdev/Documents/Projects/compass.app.windows.1.29/compass.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../Users/rhtwebdev/Documents/Projects/compass.app.windows.1.29/compass.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../Users/rhtwebdev/Documents/Projects/compass.app.windows.1.29/compass.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 20, ../sass/screen_no_padding.scss */
+body {
+  overflow: auto;
+  font-family: Arial;
+  font-size: 14px;
+}
+
+/* line 32, ../sass/screen_no_padding.scss */
+header {
+  height: 150px;
+}
+
+/* line 38, ../sass/screen_no_padding.scss */
+.textbox {
+  width: 275px;
+}
+
+/* line 43, ../sass/screen_no_padding.scss */
+.textbox_disabled {
+  width: 275px;
+  background: #dddddd;
+}
+
+/* line 48, ../sass/screen_no_padding.scss */
+.textbox_small {
+  width: 25px;
+}
+
+/* line 53, ../sass/screen_no_padding.scss */
+.textbox_small_disabled {
+  width: 25px;
+}
+
+/* line 86, ../sass/screen_no_padding.scss */
+.text_label {
+  width: 75px;
+}
+
+/* line 91, ../sass/screen_no_padding.scss */
+.dropdown {
+  width: 275px;
+}
+
+/* line 97, ../sass/screen_no_padding.scss */
+.dropdown_printer_model {
+  width: 200px !important;
+}
+
+/* line 102, ../sass/screen_no_padding.scss */
+.dropdown_toner {
+  width: 94%;
+}
+
+/* line 110, ../sass/screen_no_padding.scss */
+main {
+  width: 98.3333333333%;
+  float: left;
+  margin-left: 0.8333333333%;
+  margin-right: 0.8333333333%;
+}
+
+@media (min-width: 500px) {
+  /* line 123, ../sass/screen_no_padding.scss */
+  aside.left {
+    width: 15%;
+    float: left;
+    margin-left: 0.8333333333%;
+    margin-right: 0.8333333333%;
+    margin-left: 0;
+  }
+  /* line 130, ../sass/screen_no_padding.scss */
+  aside.right {
+    width: 15%;
+    float: right;
+    margin-left: 0.8333333333%;
+    margin-right: 0.8333333333%;
+  }
+
+  /* line 138, ../sass/screen_no_padding.scss */
+  article {
+    width: 81.6666666667%;
+    float: left;
+    margin-left: 0.8333333333%;
+    margin-right: 0.8333333333%;
+  }
+
+  /* line 145, ../sass/screen_no_padding.scss */
+  footer {
+    width: 98.3333333333%;
+    float: left;
+    margin-left: 0.8333333333%;
+    margin-right: 0.8333333333%;
+  }
+}
+/* line 152, ../sass/screen_no_padding.scss */
+a {
+  text-decoration: none;
+  display: block;
+  font-family: Arial;
+  font-size: 14px;
+  color: blue;
+}
+
+/* line 162, ../sass/screen_no_padding.scss */
+li {
+  margin: 10px;
+  display: block;
+  width: 100%;
+}
+
+/* line 169, ../sass/screen_no_padding.scss */
+#main_image {
+  max-width: 100%;
+  height: auto;
+  position: relative;
+  top: 75px;
+}
+
+/* line 177, ../sass/screen_no_padding.scss */
+.buttons, .buttons_1, .buttons_2, .buttons_3, .buttons_4, .buttons_small, .buttons_campus_map {
+  background: blue;
+  color: grey;
+  font-family: Arial;
+  font-size: 24px;
+  border: 5px;
+  padding: 40px;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* line 187, ../sass/screen_no_padding.scss */
+.buttons_1 {
+  background: #2b6ca2;
+}
+
+/* line 191, ../sass/screen_no_padding.scss */
+.buttons_2 {
+  background: #045283;
+}
+
+/* line 196, ../sass/screen_no_padding.scss */
+.buttons_3 {
+  background: #217ea9;
+}
+
+/* line 201, ../sass/screen_no_padding.scss */
+.buttons_4 {
+  background: #103f53;
+}
+
+/* line 207, ../sass/screen_no_padding.scss */
+.buttons_small, .buttons_campus_map {
+  padding: 10px;
+  background: white;
+  font-size: 12px;
+}
+
+/* line 215, ../sass/screen_no_padding.scss */
+.buttons_small:hover, .buttons_campus_map:hover {
+  background: #C5FAEF;
+}
+
+/* line 221, ../sass/screen_no_padding.scss */
+.buttons_campus_map {
+  padding: 18px;
+  background: #a0a0a0;
+}
+
+/* line 230, ../sass/screen_no_padding.scss */
+.toner_subHeader {
+  background: #BFBBBB;
+  color: white;
+  font-family: Arial;
+  font-size: 20px;
+  border: 5px;
+  padding: 10px;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* line 243, ../sass/screen_no_padding.scss */
+.section_label {
+  color: #1C8C7F;
+  font-family: Arial;
+  font-size: 18px;
+}
+
+/* line 250, ../sass/screen_no_padding.scss */
+.row_label {
+  background: #1C8C7F;
+  font-size: 14px;
+  color: white;
+  font-weight: bold;
+}
+
+/* line 258, ../sass/screen_no_padding.scss */
+.toner_table {
+  border: 1px solid #1C8C7F;
+  border-style: solid;
+}
+
+/* line 266, ../sass/screen_no_padding.scss */
+.serial_no {
+  width: 25px !important;
+  font-size: 14px;
+  color: #fff;
+}
+
+/* line 275, ../sass/screen_no_padding.scss */
+.ordering_code {
+  width: 200px !important;
+}
+
+/* line 279, ../sass/screen_no_padding.scss */
+.quantity {
+  width: 50px;
+}
+
+/* line 284, ../sass/screen_no_padding.scss */
+.add {
+  width: 25px !important;
+  font-size: 14px;
+  color: #fff;
+}

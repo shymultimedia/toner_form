@@ -1,0 +1,24 @@
+[03-Mar-2016 02:20:06] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[28000] [1045] Access denied for user 'root'@'localhost' (using password: NO)' in /home3/multi/public_html/multifinity/Projects/toner/ajax/process.php:29
+Stack trace:
+#0 /home3/multi/public_html/multifinity/Projects/toner/ajax/process.php(29): PDO->__construct('mysql:host=loca...', 'root', '')
+#1 /home3/multi/public_html/multifinity/Projects/toner/index.php(2): require('/home3/multi/pu...')
+#2 {main}
+  thrown in /home3/multi/public_html/multifinity/Projects/toner/ajax/process.php on line 29
+[03-Mar-2016 02:32:17] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[28000] [1045] Access denied for user 'multi_shylah'@'localhost' (using password: YES)' in /home3/multi/public_html/multifinity/Projects/toner/ajax/process.php:32
+Stack trace:
+#0 /home3/multi/public_html/multifinity/Projects/toner/ajax/process.php(32): PDO->__construct('mysql:host=loca...', 'multi_shylah', 'multi')
+#1 /home3/multi/public_html/multifinity/Projects/toner/index.php(2): require('/home3/multi/pu...')
+#2 {main}
+  thrown in /home3/multi/public_html/multifinity/Projects/toner/ajax/process.php on line 32
+[03-Mar-2016 02:32:22] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[28000] [1045] Access denied for user 'multi_shylah'@'localhost' (using password: YES)' in /home3/multi/public_html/multifinity/Projects/toner/ajax/process.php:32
+Stack trace:
+#0 /home3/multi/public_html/multifinity/Projects/toner/ajax/process.php(32): PDO->__construct('mysql:host=loca...', 'multi_shylah', 'multi')
+#1 /home3/multi/public_html/multifinity/Projects/toner/index.php(2): require('/home3/multi/pu...')
+#2 {main}
+  thrown in /home3/multi/public_html/multifinity/Projects/toner/ajax/process.php on line 32
+[25-Mar-2016 10:24:54 America/Chicago] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[28000] [1045] Access denied for user 'root'@'localhost' (using password: YES)' in /home3/multi/public_html/multifinity/Projects/toner/ajax/process.php:7
+Stack trace:
+#0 /home3/multi/public_html/multifinity/Projects/toner/ajax/process.php(7): PDO->__construct('mysql:host=loca...', 'root', 'MT1156av!')
+#1 /home3/multi/public_html/multifinity/Projects/toner/index.php(2): require('/home3/multi/pu...')
+#2 {main}
+  thrown in /home3/multi/public_html/multifinity/Projects/toner/ajax/process.php on line 7

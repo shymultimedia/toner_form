@@ -1,0 +1,134 @@
+/*! FILE: sass/screen.scss */
+
+//Let's add that reset back in now, 'cos it's helpful...
+@import "compass/reset";
+@import "compass";
+@import "susy";
+//@import "susyone";
+
+$susy: (
+  columns: 12,
+  container: 1200px,
+  gutters: 1/4,
+  global-box-sizing: border-box,
+  debug: (image: show)
+);
+
+
+body{
+
+@include container(80%); // establish a layout context
+/* include span(<width>); // lay out your elements */
+
+}
+
+main{
+    @include span(12 of 12);
+}
+
+header{
+
+    //height: 15%;
+//    @include span(100%);
+    @include span(12 at 1 of 12);
+
+}
+
+
+/*
+aside {
+  @include span(2 of 8);
+}
+*/
+
+aside {
+    &.left{
+        //@include span(3 first);
+//        @include span(4 first);
+        @include span(4 at 1 of 12);
+        padding: 50px;
+
+    }
+
+    &.right{
+        //@include span(2 last);
+//        @include span(4 last);
+        @include span(4 at 9 of 12);
+        padding: 25px;
+    }
+    //height: 100%
+  
+ }
+
+article {
+//        @include span(4);
+        @include span(4 at 5 of 12);
+        position: relative;
+        top:3.5em;
+
+}
+
+footer{
+
+    @include span(12 at 1 of 12);
+//    height: 15%;
+//    position:relative;
+
+//    @include span(100%);
+
+}
+
+a{
+    text-decoration: none;
+    display:block;
+}
+
+li{
+    margin:10px;
+    display:block;
+    width:100%;
+}
+.buttons{
+    background: blue;
+    color: white;
+    font-family:Arial;
+    font-size: 18px;
+    border:5px;
+    padding: 20px;
+    text-align:center;
+    font-weight: bold;
+    }
+.buttons_1{
+    @extend .buttons;
+    background:#2b6ca2;
+}
+.buttons_2{
+    @extend .buttons;
+    background:#045283;
+
+}
+.buttons_3{
+    @extend .buttons;
+    background:#217ea9;
+
+}
+.buttons_4{
+    @extend .buttons;
+    background:#103f53;
+
+}
+
+.buttons_small{
+        @extend .buttons;
+        padding: 12px;
+        background:#286da6;
+        font-size: 12px;
+
+}
+
+.buttons_campus_map{
+        @extend .buttons_small;
+        padding: 18px;
+        background:#a0a0a0;
+
+}
